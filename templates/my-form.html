@@ -1,0 +1,19 @@
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+
+  <div class="result" style="display: inline; vertical-align: top; width: 30%;">
+        {% if result %}{{ result|safe }}{% endif %}
+  </div>
+  <br><br>
+  <div class="top_stuff" style="display: inline; vertical-align: top;">
+    <form style="display: inline-block; vertical-align: top; width: 30%" action="/set_ai_prompt" method="POST">
+        <br><b>SET YOUR AI PROMPT</b><br>
+        <textarea rows="30" cols="125" name="ai_prompt"></textarea><br>
+        <br>
+        <br><br><center><input type="submit" name="submit" value="SUBMIT"><br></center>
+    </form>
+  </div>
