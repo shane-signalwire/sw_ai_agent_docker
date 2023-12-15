@@ -9,7 +9,7 @@ This standalone docker container allows configuration and customization of a Sig
 ## RUN VIA DOCKER
 ```console
 # Build the Docker image:
-docker build -t sw_aibot --build-arg "NGROK_AUTHTOKEN_ARG=<NGROK AUTH TOKEN>
+docker build -t sw_aibot --build-arg "NGROK_AUTHTOKEN_ARG=<NGROK AUTH TOKEN> .
 
 # Run the container
 docker run -p 8000:5000 sw_aibot
